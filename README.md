@@ -1,4 +1,4 @@
 15puzzle
 ========
 
-15-puzzle
+One page application 15 sliding puzzle.
