@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Sliding Puzzle</title>
+		<meta charset="UTF8">
+		<link type="text/css" rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<div class="main">
+			<div id="leftContainer">
+				<table>
+					<tr>
+						<td id="0"></td>
+						<td id="1"></td>
+						<td id="2"></td>
+						<td id="3"></td>
+					</tr>
+					<tr>
+						<td id="4"></td>
+						<td id="5"></td>
+						<td id="6"></td>
+						<td id="7"></td>						
+					</tr>
+					<tr>
+						<td id="8"></td>
+						<td id="9"></td>
+						<td id="10"></td>
+						<td id="11"></td>
+					</tr>
+					<tr>
+						<td id="12"></td>
+						<td id="13"></td>
+						<td id="14"></td>
+						<td id="15"></td>
+					</tr>					
+				</table>				
+				<button id='solveIt' onclick = solve();> Solve</button>
+				<button id='playIt' onclick = play();> Play</button>
+				<span id="info"></span>
+				<button id='ScrambleIt' onclick = scrambleIt();> Scramble</button>
+			</div>
+			<div id="rightContainer">
+				<h2> SLIDING PUZZLE </h2>
+				<div class = "info_content">
+					<p class = "title"> How To Play: </p>
+					<p class = "content"> Please drag or click one of the image tiles to the empty tile square. Click the scramble button to restart the game. Click the SOLVE button to let the program solve current game and then click PLAY button to see how it solved step by step.</p>
+					<p class = "content"> Please Note: the solution is not the shortest path solution.</p>
+					<img src='lion.png' width='160px' height= '160px'>
+					<span style="font-size:10px"><em>Correct image</em></span>
+					<p class = "title"> Algorithm: </p>
+					<p class = "content">Used modified A* Search Algorithm to find the correct path from current state to goal state, used Manhattan Distance Algorithm as the Heuristic function.</p>
+					<p class = "content">Tried with both A* and IDA* Search Algorithm to find the shortest path. Due to the running time issue, I decided to use non-shortest time solution. It takes a relatively long time to run JavaScript in DOM to find the shortest path. IDA* is faster than A*, but still running too long.(> mins). I compared with the same code written in Java, running time is significantly different (a couple seconds versus a couple minutes).</p>
+					<p class = "content">Please check Java, Ruby and JavaScript code in the package.</p>
+				</div>
+			</div>
+			<div id= "Moving_Div"></div>
+		</div>
+		<script src="scramble.js"></script>		
+		<script src="priorityQueue.js"></script>		
+		<script src="Astar.js"></script>		
+		<script src="solvePuzzle.js"></script>
+		<script src="initialize.js"></script>
+	</body>
+</html>

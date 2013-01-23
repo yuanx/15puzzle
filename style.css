@@ -1,0 +1,109 @@
+body{
+	padding:0;
+	margin:0;
+	height: 100%;
+	width: 100%;
+	background-color: #C0C0C0;
+	font-family: Verdana, Helvetica, Arial;
+}
+.main{
+	width: 1200px;
+	min-height: 100%;
+	background-color: #FFFAF0;
+	position: absolute;
+	top:0;
+	left:7%;
+	padding: 0 10px 0 10px;
+	-webkit-box-shadow: 3px 3px 5px 6px #888;
+}
+#leftContainer{
+	float: left;
+	margin-top: 40px;
+	position: relative;
+}
+
+#rightContainer{
+	margin-top: 40px;
+	float: right;
+	width: 516px;
+	margin-right: 8px;
+	margin-left:8px;
+}
+
+h2{
+	text-align:center;
+}
+
+p{
+	font-size: 15px;
+}
+table{
+	border: 1px solid black;
+	table-layout: fixed;
+	width:642px;
+}
+td{
+	border: 1px solid black;
+	padding: 0;
+	height: 160px;
+	width: 160px;
+}
+.hasImage{
+	background-image: url('lion.png');
+	background-repeat: none;
+}
+
+#solveIt, #ScrambleIt {
+	font-size: 20px;
+	margin-top: 20px;
+	text-transform:uppercase;
+	width:125px;
+	display:inline;
+	margin:20px 10px 0 10px;
+}
+
+#playIt{
+	display:none;
+	font-size: 20px;
+	margin-top: 20px;
+	text-transform:uppercase;
+	width:125px;
+	margin:20px 10px 0 10px;
+	color: green;
+}
+			
+.running{
+	color: red;
+	text-decoration: blink;
+}
+
+.done{
+	color: green;
+	font-style: italic;
+}
+
+#Moving_Div{
+	display: none;
+	background-image: url('lion.png');
+	background-repeat: none;
+	position:absolute;
+	border: 1px solid black;
+	padding: 0;
+	height: 160px;
+	width: 160px;
+}
+img{
+	clear:both;
+	display:block;
+}
+h2{
+	margin-top:0;
+	margin-bottom: 10px;
+}
+p.title{
+	font-size: 16px;
+	font-weight: bold;
+}
+p.content{
+	line-height: 20px;
+}
